@@ -9,7 +9,8 @@ end
 def summon_captain_planet(calls)
   calls.collect do |x|
     first = x[0].upcase
-    array = x.split(x.index(0))
+    array = x.split(//)
+    array.shift
     array.unshift(first)
     array.join('') + '!'
   end
