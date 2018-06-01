@@ -25,7 +25,6 @@ end
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
   snacks.find do |grub|
-    if cheese_types.index(grub) > -1
-    end
+    cheese_types.index(grub) > -1
   end
 end
